@@ -1,0 +1,68 @@
+{
+  "pins" : [
+    {
+      "identity" : "cocoaasyncsocket",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/robbiehanson/CocoaAsyncSocket.git",
+      "state" : {
+        "revision" : "dbdc00669c1ced63b27c3c5f052ee4d28f10150c",
+        "version" : "7.6.5"
+      }
+    },
+    {
+      "identity" : "cocoalumberjack",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/CocoaLumberjack/CocoaLumberjack.git",
+      "state" : {
+        "revision" : "67ec5818a757aba4d7c534e21a905d878d128dbf",
+        "version" : "3.8.1"
+      }
+    },
+    {
+      "identity" : "kissxml",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/robbiehanson/KissXML.git",
+      "state" : {
+        "revision" : "990cdef080213b5a3f0d9709b845d553bd3ddb97",
+        "version" : "5.3.3"
+      }
+    },
+    {
+      "identity" : "libidn-framework",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/chrisballinger/libidn-framework.git",
+      "state" : {
+        "revision" : "fc2700ce83a279ac121aa9f59eedacfadd24ab5b",
+        "version" : "1.35.1"
+      }
+    },
+    {
+      "identity" : "sqlite.swift",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/stephencelis/SQLite.swift.git",
+      "state" : {
+        "revision" : "7a2e3cd27de56f6d396e84f63beefd0267b55ccb",
+        "version" : "0.14.1"
+      }
+    },
+    {
+      "identity" : "swift-log",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/apple/swift-log.git",
+      "state" : {
+        "revision" : "532d8b529501fb73a2455b179e0bbb6d49b652ed",
+        "version" : "1.5.3"
+      }
+    },
+    {
+      "identity" : "xmppframework",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/robbiehanson/XMPPFramework.git",
+      "state" : {
+        "revision" : "76969d13e84a9b04359b761a5b49f3ccdbef6794",
+        "version" : "4.1.0"
+      }
+    }
+  ],
+  "version" : 2
+}

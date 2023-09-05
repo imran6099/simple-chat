@@ -11,6 +11,17 @@
 		6C95B3E82AA6F66700B28643 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C95B3E72AA6F66700B28643 /* ContentView.swift */; };
 		6C95B3EA2AA6F66800B28643 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6C95B3E92AA6F66800B28643 /* Assets.xcassets */; };
 		6C95B3ED2AA6F66800B28643 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6C95B3EC2AA6F66800B28643 /* Preview Assets.xcassets */; };
+		6C95B3F72AA6F6B400B28643 /* SQLite in Frameworks */ = {isa = PBXBuildFile; productRef = 6C95B3F62AA6F6B400B28643 /* SQLite */; };
+		6C95B3FA2AA6F6CB00B28643 /* XMPPFramework in Frameworks */ = {isa = PBXBuildFile; productRef = 6C95B3F92AA6F6CB00B28643 /* XMPPFramework */; };
+		6C95B3FC2AA6F6CB00B28643 /* XMPPFrameworkSwift in Frameworks */ = {isa = PBXBuildFile; productRef = 6C95B3FB2AA6F6CB00B28643 /* XMPPFrameworkSwift */; };
+		6C95B3FE2AA6F70A00B28643 /* ChatAppDataModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C95B3FD2AA6F70A00B28643 /* ChatAppDataModel.swift */; };
+		6C95B4022AA6F72B00B28643 /* SQLiteManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C95B4012AA6F72B00B28643 /* SQLiteManager.swift */; };
+		6C95B4042AA6F72E00B28643 /* TestCahtsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C95B4032AA6F72E00B28643 /* TestCahtsView.swift */; };
+		6C95B4062AA6F73300B28643 /* XMPPManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C95B4052AA6F73300B28643 /* XMPPManager.swift */; };
+		6C95B4092AA6FAE100B28643 /* ContactView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C95B4082AA6FAE100B28643 /* ContactView.swift */; };
+		6C95B40B2AA6FB0D00B28643 /* ChatView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C95B40A2AA6FB0D00B28643 /* ChatView.swift */; };
+		6C95B40D2AA6FC2A00B28643 /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C95B40C2AA6FC2A00B28643 /* LoginView.swift */; };
+		6C95B40F2AA719E600B28643 /* XMPPService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C95B40E2AA719E600B28643 /* XMPPService.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -19,6 +30,14 @@
 		6C95B3E72AA6F66700B28643 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		6C95B3E92AA6F66800B28643 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		6C95B3EC2AA6F66800B28643 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		6C95B3FD2AA6F70A00B28643 /* ChatAppDataModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChatAppDataModel.swift; sourceTree = "<group>"; };
+		6C95B4012AA6F72B00B28643 /* SQLiteManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SQLiteManager.swift; sourceTree = "<group>"; };
+		6C95B4032AA6F72E00B28643 /* TestCahtsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestCahtsView.swift; sourceTree = "<group>"; };
+		6C95B4052AA6F73300B28643 /* XMPPManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = XMPPManager.swift; sourceTree = "<group>"; };
+		6C95B4082AA6FAE100B28643 /* ContactView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactView.swift; sourceTree = "<group>"; };
+		6C95B40A2AA6FB0D00B28643 /* ChatView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatView.swift; sourceTree = "<group>"; };
+		6C95B40C2AA6FC2A00B28643 /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
+		6C95B40E2AA719E600B28643 /* XMPPService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = XMPPService.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -26,6 +45,9 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6C95B3FC2AA6F6CB00B28643 /* XMPPFrameworkSwift in Frameworks */,
+				6C95B3FA2AA6F6CB00B28643 /* XMPPFramework in Frameworks */,
+				6C95B3F72AA6F6B400B28643 /* SQLite in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -51,10 +73,16 @@
 		6C95B3E42AA6F66700B28643 /* simple-chat */ = {
 			isa = PBXGroup;
 			children = (
+				6C95B4072AA6FA3B00B28643 /* View */,
+				6C95B4052AA6F73300B28643 /* XMPPManager.swift */,
+				6C95B4032AA6F72E00B28643 /* TestCahtsView.swift */,
+				6C95B4012AA6F72B00B28643 /* SQLiteManager.swift */,
+				6C95B3FD2AA6F70A00B28643 /* ChatAppDataModel.swift */,
 				6C95B3E52AA6F66700B28643 /* simple_chatApp.swift */,
 				6C95B3E72AA6F66700B28643 /* ContentView.swift */,
 				6C95B3E92AA6F66800B28643 /* Assets.xcassets */,
 				6C95B3EB2AA6F66800B28643 /* Preview Content */,
+				6C95B40E2AA719E600B28643 /* XMPPService.swift */,
 			);
 			path = "simple-chat";
 			sourceTree = "<group>";
@@ -65,6 +93,16 @@
 				6C95B3EC2AA6F66800B28643 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		6C95B4072AA6FA3B00B28643 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				6C95B4082AA6FAE100B28643 /* ContactView.swift */,
+				6C95B40A2AA6FB0D00B28643 /* ChatView.swift */,
+				6C95B40C2AA6FC2A00B28643 /* LoginView.swift */,
+			);
+			path = View;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -83,6 +121,11 @@
 			dependencies = (
 			);
 			name = "simple-chat";
+			packageProductDependencies = (
+				6C95B3F62AA6F6B400B28643 /* SQLite */,
+				6C95B3F92AA6F6CB00B28643 /* XMPPFramework */,
+				6C95B3FB2AA6F6CB00B28643 /* XMPPFrameworkSwift */,
+			);
 			productName = "simple-chat";
 			productReference = 6C95B3E22AA6F66700B28643 /* simple-chat.app */;
 			productType = "com.apple.product-type.application";
@@ -111,6 +154,10 @@
 				Base,
 			);
 			mainGroup = 6C95B3D92AA6F66700B28643;
+			packageReferences = (
+				6C95B3F52AA6F6B400B28643 /* XCRemoteSwiftPackageReference "SQLite.swift" */,
+				6C95B3F82AA6F6CB00B28643 /* XCRemoteSwiftPackageReference "XMPPFramework" */,
+			);
 			productRefGroup = 6C95B3E32AA6F66700B28643 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -138,7 +185,15 @@
 			buildActionMask = 2147483647;
 			files = (
 				6C95B3E82AA6F66700B28643 /* ContentView.swift in Sources */,
+				6C95B4042AA6F72E00B28643 /* TestCahtsView.swift in Sources */,
+				6C95B40F2AA719E600B28643 /* XMPPService.swift in Sources */,
+				6C95B4062AA6F73300B28643 /* XMPPManager.swift in Sources */,
+				6C95B40D2AA6FC2A00B28643 /* LoginView.swift in Sources */,
 				6C95B3E62AA6F66700B28643 /* simple_chatApp.swift in Sources */,
+				6C95B40B2AA6FB0D00B28643 /* ChatView.swift in Sources */,
+				6C95B4092AA6FAE100B28643 /* ContactView.swift in Sources */,
+				6C95B3FE2AA6F70A00B28643 /* ChatAppDataModel.swift in Sources */,
+				6C95B4022AA6F72B00B28643 /* SQLiteManager.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -339,6 +394,43 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		6C95B3F52AA6F6B400B28643 /* XCRemoteSwiftPackageReference "SQLite.swift" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/stephencelis/SQLite.swift.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 0.14.1;
+			};
+		};
+		6C95B3F82AA6F6CB00B28643 /* XCRemoteSwiftPackageReference "XMPPFramework" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/robbiehanson/XMPPFramework.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 4.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		6C95B3F62AA6F6B400B28643 /* SQLite */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 6C95B3F52AA6F6B400B28643 /* XCRemoteSwiftPackageReference "SQLite.swift" */;
+			productName = SQLite;
+		};
+		6C95B3F92AA6F6CB00B28643 /* XMPPFramework */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 6C95B3F82AA6F6CB00B28643 /* XCRemoteSwiftPackageReference "XMPPFramework" */;
+			productName = XMPPFramework;
+		};
+		6C95B3FB2AA6F6CB00B28643 /* XMPPFrameworkSwift */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 6C95B3F82AA6F6CB00B28643 /* XCRemoteSwiftPackageReference "XMPPFramework" */;
+			productName = XMPPFrameworkSwift;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 6C95B3DA2AA6F66700B28643 /* Project object */;
 }
