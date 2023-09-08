@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Bucket
+   uuid = "1B2D66FD-DF19-4DB8-B71A-CEC0C2254D9A"
+   type = "1"
+   version = "2.0">
+   <Breakpoints>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "A91205C8-5604-41D2-9A7F-19A4DED047D7"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "simple-chat/SQLiteManager.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "10"
+            endingLineNumber = "10"
+            landmarkName = "unknown"
+            landmarkType = "0">
+            <Locations>
+               <Location
+                  uuid = "A91205C8-5604-41D2-9A7F-19A4DED047D7 - c8e649c3d8cf7480"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "one-time initialization function for shared"
+                  moduleName = "simple-chat"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/imranabdullah/Code/training/SwiftUI/simple-chat/simple-chat/SQLiteManager.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "12"
+                  endingLineNumber = "12"
+                  offsetFromSymbolStart = "16">
+               </Location>
+               <Location
+                  uuid = "A91205C8-5604-41D2-9A7F-19A4DED047D7 - 533c5e242dda404"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "simple_chat.SQLManager.shared.unsafeMutableAddressor : simple_chat.SQLManager"
+                  moduleName = "simple-chat"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/imranabdullah/Code/training/SwiftUI/simple-chat/simple-chat/SQLiteManager.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "12"
+                  endingLineNumber = "12"
+                  offsetFromSymbolStart = "16">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+   </Breakpoints>
+</Bucket>

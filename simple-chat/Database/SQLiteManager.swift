@@ -130,7 +130,9 @@ class SQLManager {
                print("Insert failed: \(error)")
            }
        }
-       
+
+
+    
        // Seed User
        func seedDatabaseIfEmpty() {
            do {
@@ -146,11 +148,18 @@ class SQLManager {
                    for user in mockUsers {
                        insertUser(user: user)
                    }
+                              let groupChat1 = ChatRoom(id: UUID(), messages: [], type: .group(name: "Family Group", participants: [mockUsers[0], mockUsers[1], mockUsers[2], mockUsers[3]]))
+
+                              insertGroupChat(chatRoom: groupChat1)
+                   
+                   
                }
            } catch {
                print("Failed to seed database: \(error)")
            }
      }
+    
+
     
     let mockUsers: [User] = [
         User(id: "900052318228", username: "Said", displayName: "", lastActive: Date(), isActive: false),
@@ -291,9 +300,7 @@ class SQLManager {
                 print("Failed to find sender for message: \(messageRow[messageId])")
             }
         }
-        
-        print("Found Chat Messages \(chatMessages)")
-        
+                
         return ChatRoom(id: roomIdValue, messages: chatMessages, type: chatType!)
     }
 
@@ -315,7 +322,7 @@ class SQLManager {
                 // Insert chat room first
                 let insertChatRoom = chatRooms.insert(
                     roomId <- chatRoom.id,
-                    chatType <- "group",
+                    chatType <- chatRoom.displayName,
                     participant1 <- nil,
                     participant2 <- nil
                 )
@@ -384,6 +391,12 @@ class SQLManager {
             return nil
         }
     }
+    
+   
+
+   
+
+
 
 
 }
