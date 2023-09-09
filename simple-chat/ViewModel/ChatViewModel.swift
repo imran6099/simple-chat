@@ -8,7 +8,7 @@
 import Foundation
 import XMPPFramework
 
-class ChatViewModel: ObservableObject, XMPPMessageDelegate {
+class ChatViewModel: ObservableObject, XMPPMessageDelegate, XMPPPresenceDelegate {
     @Published var messages: [Message] = []
     @Published var newMessage: String = ""
     var user: User
@@ -20,6 +20,7 @@ class ChatViewModel: ObservableObject, XMPPMessageDelegate {
     init(user: User) {
         self.user = user
         XMPPManager.shared.messageDelegate = self
+       
         
         if let existingChatRoom = SQLManager.shared.fetchChatRoom(participant1Id: user.id) {
             self.chatRoom = existingChatRoom
@@ -31,6 +32,7 @@ class ChatViewModel: ObservableObject, XMPPMessageDelegate {
         }
         
         fetchPreviousMessages()
+        XMPPManager.shared.presenceDelegate = self
     }
     
     
@@ -41,6 +43,18 @@ class ChatViewModel: ObservableObject, XMPPMessageDelegate {
         }
     }
     
+    func receivedPresenceUpdate(from userJID: XMPPJID, isActive: Bool, lastActive: Date) {
+            if user.id == userJID.user {
+                user.isActive = isActive
+                user.lastActive = lastActive
+            }
+    }
+    
+    func updateUserPresenceToActive() {
+        let presence = XMPPPresence()
+        XMPPManager.shared.xmppStream.send(presence)
+    }
+
     func connectAndFetchMessages() {
         if !XMPPManager.shared.xmppStream.isConnected {
             XMPPManager.shared.connect(hostName: domain, port: 5222, username: "\(userJID)@\(domain)", password: userPassword) { success, error in

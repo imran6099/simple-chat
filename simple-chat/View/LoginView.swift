@@ -7,6 +7,7 @@
 
 import Foundation
 import SwiftUI
+import XMPPFramework
 
 struct LoginView: View {
     @StateObject private var viewModel = LoginViewModel()
@@ -56,6 +57,8 @@ class LoginViewModel: ObservableObject {
             if success {
                 self?.currentUserJID = jid
                 self?.userPassword = password
+                let presence = XMPPPresence()
+                XMPPManager.shared.xmppStream.send(presence)
             } else {
                 print("Error logging in: \(error?.localizedDescription ?? "Unknown error")")
             }

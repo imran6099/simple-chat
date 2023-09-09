@@ -1,0 +1,21 @@
+{
+  "images" : [
+    {
+      "filename" : "shak.si_Young_somalia_man_with_his_camel_and_have_a_phone_in_th_af928c0c-76c7-4e62-b0c6-f14aca1e1244.png",
+      "idiom" : "universal",
+      "scale" : "1x"
+    },
+    {
+      "idiom" : "universal",
+      "scale" : "2x"
+    },
+    {
+      "idiom" : "universal",
+      "scale" : "3x"
+    }
+  ],
+  "info" : {
+    "author" : "xcode",
+    "version" : 1
+  }
+}

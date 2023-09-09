@@ -14,14 +14,11 @@
 		6C95B3F72AA6F6B400B28643 /* SQLite in Frameworks */ = {isa = PBXBuildFile; productRef = 6C95B3F62AA6F6B400B28643 /* SQLite */; };
 		6C95B3FA2AA6F6CB00B28643 /* XMPPFramework in Frameworks */ = {isa = PBXBuildFile; productRef = 6C95B3F92AA6F6CB00B28643 /* XMPPFramework */; };
 		6C95B3FC2AA6F6CB00B28643 /* XMPPFrameworkSwift in Frameworks */ = {isa = PBXBuildFile; productRef = 6C95B3FB2AA6F6CB00B28643 /* XMPPFrameworkSwift */; };
-		6C95B3FE2AA6F70A00B28643 /* ChatAppDataModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C95B3FD2AA6F70A00B28643 /* ChatAppDataModel.swift */; };
 		6C95B4022AA6F72B00B28643 /* SQLiteManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C95B4012AA6F72B00B28643 /* SQLiteManager.swift */; };
-		6C95B4042AA6F72E00B28643 /* TestCahtsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C95B4032AA6F72E00B28643 /* TestCahtsView.swift */; };
 		6C95B4062AA6F73300B28643 /* XMPPManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C95B4052AA6F73300B28643 /* XMPPManager.swift */; };
 		6C95B4092AA6FAE100B28643 /* ContactView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C95B4082AA6FAE100B28643 /* ContactView.swift */; };
 		6C95B40B2AA6FB0D00B28643 /* ChatView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C95B40A2AA6FB0D00B28643 /* ChatView.swift */; };
 		6C95B40D2AA6FC2A00B28643 /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C95B40C2AA6FC2A00B28643 /* LoginView.swift */; };
-		6C95B40F2AA719E600B28643 /* XMPPService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C95B40E2AA719E600B28643 /* XMPPService.swift */; };
 		6C95B4112AA7E2A500B28643 /* CreateGroupView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C95B4102AA7E2A500B28643 /* CreateGroupView.swift */; };
 		6C95B4132AA7FC1B00B28643 /* GroupChatVIew.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C95B4122AA7FC1A00B28643 /* GroupChatVIew.swift */; };
 		6CCF29682AA9B37100C739A8 /* SQLChatGroups.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6CCF29672AA9B37100C739A8 /* SQLChatGroups.swift */; };
@@ -29,6 +26,15 @@
 		6CCF296D2AAACE6F00C739A8 /* ChatViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6CCF296C2AAACE6F00C739A8 /* ChatViewModel.swift */; };
 		6CCF296F2AAAE72400C739A8 /* TemChatModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6CCF296E2AAAE72400C739A8 /* TemChatModel.swift */; };
 		6CCF29712AAAE97000C739A8 /* MessageCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6CCF29702AAAE97000C739A8 /* MessageCell.swift */; };
+		6CCF29742AAB010A00C739A8 /* LoginViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6CCF29732AAB010A00C739A8 /* LoginViewModel.swift */; };
+		6CCF29762AAB01DC00C739A8 /* AuthVIew.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6CCF29752AAB01DC00C739A8 /* AuthVIew.swift */; };
+		6CCF29782AAB02D100C739A8 /* AuthViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6CCF29772AAB02D100C739A8 /* AuthViewModel.swift */; };
+		6CCF297B2AAB03BB00C739A8 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6CCF297A2AAB03BB00C739A8 /* Extensions.swift */; };
+		6CCF297E2AAB053200C739A8 /* CustomAuthTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6CCF297D2AAB053200C739A8 /* CustomAuthTextField.swift */; };
+		6CCF29802AAB05AD00C739A8 /* SecureAuthTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6CCF297F2AAB05AD00C739A8 /* SecureAuthTextField.swift */; };
+		6CCF29832AAC419D00C739A8 /* MessageModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6CCF29822AAC419D00C739A8 /* MessageModel.swift */; };
+		6CCF29852AAC41C200C739A8 /* UserModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6CCF29842AAC41C200C739A8 /* UserModel.swift */; };
+		6CCF29872AAC41F000C739A8 /* ChatModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6CCF29862AAC41F000C739A8 /* ChatModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -37,14 +43,11 @@
 		6C95B3E72AA6F66700B28643 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		6C95B3E92AA6F66800B28643 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		6C95B3EC2AA6F66800B28643 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
-		6C95B3FD2AA6F70A00B28643 /* ChatAppDataModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChatAppDataModel.swift; sourceTree = "<group>"; };
 		6C95B4012AA6F72B00B28643 /* SQLiteManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SQLiteManager.swift; sourceTree = "<group>"; };
-		6C95B4032AA6F72E00B28643 /* TestCahtsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestCahtsView.swift; sourceTree = "<group>"; };
 		6C95B4052AA6F73300B28643 /* XMPPManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = XMPPManager.swift; sourceTree = "<group>"; };
 		6C95B4082AA6FAE100B28643 /* ContactView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactView.swift; sourceTree = "<group>"; };
 		6C95B40A2AA6FB0D00B28643 /* ChatView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatView.swift; sourceTree = "<group>"; };
 		6C95B40C2AA6FC2A00B28643 /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
-		6C95B40E2AA719E600B28643 /* XMPPService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = XMPPService.swift; sourceTree = "<group>"; };
 		6C95B4102AA7E2A500B28643 /* CreateGroupView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateGroupView.swift; sourceTree = "<group>"; };
 		6C95B4122AA7FC1A00B28643 /* GroupChatVIew.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GroupChatVIew.swift; sourceTree = "<group>"; };
 		6CCF29672AA9B37100C739A8 /* SQLChatGroups.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SQLChatGroups.swift; sourceTree = "<group>"; };
@@ -52,6 +55,15 @@
 		6CCF296C2AAACE6F00C739A8 /* ChatViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatViewModel.swift; sourceTree = "<group>"; };
 		6CCF296E2AAAE72400C739A8 /* TemChatModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TemChatModel.swift; sourceTree = "<group>"; };
 		6CCF29702AAAE97000C739A8 /* MessageCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessageCell.swift; sourceTree = "<group>"; };
+		6CCF29732AAB010A00C739A8 /* LoginViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewModel.swift; sourceTree = "<group>"; };
+		6CCF29752AAB01DC00C739A8 /* AuthVIew.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthVIew.swift; sourceTree = "<group>"; };
+		6CCF29772AAB02D100C739A8 /* AuthViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthViewModel.swift; sourceTree = "<group>"; };
+		6CCF297A2AAB03BB00C739A8 /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
+		6CCF297D2AAB053200C739A8 /* CustomAuthTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomAuthTextField.swift; sourceTree = "<group>"; };
+		6CCF297F2AAB05AD00C739A8 /* SecureAuthTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecureAuthTextField.swift; sourceTree = "<group>"; };
+		6CCF29822AAC419D00C739A8 /* MessageModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessageModel.swift; sourceTree = "<group>"; };
+		6CCF29842AAC41C200C739A8 /* UserModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserModel.swift; sourceTree = "<group>"; };
+		6CCF29862AAC41F000C739A8 /* ChatModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -87,17 +99,17 @@
 		6C95B3E42AA6F66700B28643 /* simple-chat */ = {
 			isa = PBXGroup;
 			children = (
+				6CCF29882AAC48A400C739A8 /* Services */,
+				6CCF29812AAC416200C739A8 /* Model */,
+				6CCF297C2AAB050700C739A8 /* Utils */,
+				6CCF29792AAB039400C739A8 /* Extensions */,
 				6CCF29692AA9CB2600C739A8 /* ViewModel */,
 				6CCF29662AA9B35200C739A8 /* Database */,
 				6C95B4072AA6FA3B00B28643 /* View */,
-				6C95B4052AA6F73300B28643 /* XMPPManager.swift */,
-				6C95B4032AA6F72E00B28643 /* TestCahtsView.swift */,
-				6C95B3FD2AA6F70A00B28643 /* ChatAppDataModel.swift */,
 				6C95B3E52AA6F66700B28643 /* simple_chatApp.swift */,
 				6C95B3E72AA6F66700B28643 /* ContentView.swift */,
 				6C95B3E92AA6F66800B28643 /* Assets.xcassets */,
 				6C95B3EB2AA6F66800B28643 /* Preview Content */,
-				6C95B40E2AA719E600B28643 /* XMPPService.swift */,
 			);
 			path = "simple-chat";
 			sourceTree = "<group>";
@@ -113,6 +125,7 @@
 		6C95B4072AA6FA3B00B28643 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				6CCF29722AAB00D800C739A8 /* Authentication */,
 				6C95B4082AA6FAE100B28643 /* ContactView.swift */,
 				6C95B40A2AA6FB0D00B28643 /* ChatView.swift */,
 				6C95B40C2AA6FC2A00B28643 /* LoginView.swift */,
@@ -138,8 +151,53 @@
 				6CCF296A2AA9CB3600C739A8 /* GroupChatViewModel.swift */,
 				6CCF296C2AAACE6F00C739A8 /* ChatViewModel.swift */,
 				6CCF296E2AAAE72400C739A8 /* TemChatModel.swift */,
+				6CCF29732AAB010A00C739A8 /* LoginViewModel.swift */,
+				6CCF29772AAB02D100C739A8 /* AuthViewModel.swift */,
 			);
 			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		6CCF29722AAB00D800C739A8 /* Authentication */ = {
+			isa = PBXGroup;
+			children = (
+				6CCF29752AAB01DC00C739A8 /* AuthVIew.swift */,
+			);
+			path = Authentication;
+			sourceTree = "<group>";
+		};
+		6CCF29792AAB039400C739A8 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				6CCF297A2AAB03BB00C739A8 /* Extensions.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		6CCF297C2AAB050700C739A8 /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				6CCF297D2AAB053200C739A8 /* CustomAuthTextField.swift */,
+				6CCF297F2AAB05AD00C739A8 /* SecureAuthTextField.swift */,
+			);
+			path = Utils;
+			sourceTree = "<group>";
+		};
+		6CCF29812AAC416200C739A8 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				6CCF29822AAC419D00C739A8 /* MessageModel.swift */,
+				6CCF29842AAC41C200C739A8 /* UserModel.swift */,
+				6CCF29862AAC41F000C739A8 /* ChatModel.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		6CCF29882AAC48A400C739A8 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				6C95B4052AA6F73300B28643 /* XMPPManager.swift */,
+			);
+			path = Services;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -221,22 +279,28 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6CCF29782AAB02D100C739A8 /* AuthViewModel.swift in Sources */,
 				6C95B3E82AA6F66700B28643 /* ContentView.swift in Sources */,
-				6C95B4042AA6F72E00B28643 /* TestCahtsView.swift in Sources */,
+				6CCF29802AAB05AD00C739A8 /* SecureAuthTextField.swift in Sources */,
 				6C95B4132AA7FC1B00B28643 /* GroupChatVIew.swift in Sources */,
-				6C95B40F2AA719E600B28643 /* XMPPService.swift in Sources */,
 				6CCF296F2AAAE72400C739A8 /* TemChatModel.swift in Sources */,
 				6C95B4062AA6F73300B28643 /* XMPPManager.swift in Sources */,
+				6CCF29852AAC41C200C739A8 /* UserModel.swift in Sources */,
 				6CCF29682AA9B37100C739A8 /* SQLChatGroups.swift in Sources */,
+				6CCF29762AAB01DC00C739A8 /* AuthVIew.swift in Sources */,
+				6CCF29872AAC41F000C739A8 /* ChatModel.swift in Sources */,
 				6CCF296B2AA9CB3600C739A8 /* GroupChatViewModel.swift in Sources */,
+				6CCF29742AAB010A00C739A8 /* LoginViewModel.swift in Sources */,
 				6C95B40D2AA6FC2A00B28643 /* LoginView.swift in Sources */,
 				6C95B4112AA7E2A500B28643 /* CreateGroupView.swift in Sources */,
+				6CCF297B2AAB03BB00C739A8 /* Extensions.swift in Sources */,
 				6C95B3E62AA6F66700B28643 /* simple_chatApp.swift in Sources */,
 				6C95B40B2AA6FB0D00B28643 /* ChatView.swift in Sources */,
 				6C95B4092AA6FAE100B28643 /* ContactView.swift in Sources */,
 				6CCF29712AAAE97000C739A8 /* MessageCell.swift in Sources */,
-				6C95B3FE2AA6F70A00B28643 /* ChatAppDataModel.swift in Sources */,
+				6CCF29832AAC419D00C739A8 /* MessageModel.swift in Sources */,
 				6CCF296D2AAACE6F00C739A8 /* ChatViewModel.swift in Sources */,
+				6CCF297E2AAB053200C739A8 /* CustomAuthTextField.swift in Sources */,
 				6C95B4022AA6F72B00B28643 /* SQLiteManager.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

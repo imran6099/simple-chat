@@ -94,15 +94,15 @@ class XMPPManager: NSObject, XMPPStreamDelegate, XMPPMUCDelegate {
         }
     }
     
-//    func xmppStream(_ sender: XMPPStream, didReceive presence: XMPPPresence) {
-//            let userJID = presence.from
-//            let isActive = presence.show == "available"
-//            let lastActiveDate = Date() // This should be adjusted based on your XMPP server's behavior
-//            guard let unwarappedUserJID = userJID else {
-//                return
-//            }
-//            presenceDelegate?.receivedPresenceUpdate(from: unwarappedUserJID, isActive: isActive, lastActive: lastActiveDate)
-//        }
+    func xmppStream(_ sender: XMPPStream, didReceive presence: XMPPPresence) {
+            let userJID = presence.from
+            let isActive = presence.show == "available"
+            let lastActiveDate = Date() // This should be adjusted based on your XMPP server's behavior
+            guard let unwarappedUserJID = userJID else {
+                return
+            }
+            presenceDelegate?.receivedPresenceUpdate(from: unwarappedUserJID, isActive: isActive, lastActive: lastActiveDate)
+        }
     
     func sendGroupMessage(to recipientJIDs: [String], content: String, onSuccess: @escaping () -> Void, onFailure: @escaping (Error) -> Void) {
         let group = DispatchGroup()
@@ -229,8 +229,6 @@ class XMPPManager: NSObject, XMPPStreamDelegate, XMPPMUCDelegate {
     func xmppRoom(_ sender: XMPPRoom, didReceiveInvitation message: XMPPMessage) {
         print("Received invitation for room: \(sender.roomJID)")
     }
-    
-
 }
 
 enum XMPPServiceError: Error {

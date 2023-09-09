@@ -21,7 +21,11 @@ struct ChatView: View {
             Text(viewModel.user.username)
                 .font(.title2)
                 .bold()
-            Divider()
+            
+                      Text(viewModel.user.lastSeenStatus)
+                          .font(.caption)
+                          .foregroundColor(.gray)
+     
             
             ScrollViewReader { proxy in
                 List(viewModel.messages, id: \.id) { message in
@@ -43,6 +47,7 @@ struct ChatView: View {
         }
         .onAppear {
             viewModel.connectAndFetchMessages()
+            viewModel.updateUserPresenceToActive() 
         }
     }
 }
